@@ -2,8 +2,8 @@ import java.util.Random;
 
 public class Conta {
 	
-	private int agencia;
-	private int conta;
+	private int agencia = setAgencia();	
+	private int conta = setConta();
 	private double saldo;
 	private Cliente titular = new Cliente();
 	

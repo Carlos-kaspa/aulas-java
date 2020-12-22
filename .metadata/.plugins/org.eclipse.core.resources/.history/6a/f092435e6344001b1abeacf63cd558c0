@@ -2,16 +2,10 @@ import java.util.Random;
 
 public class Conta {
 	
-	private int agencia;
-	private int conta;
+	private int agencia = setAgencia();	
+	private int conta = setConta();
 	private double saldo;
 	private Cliente titular = new Cliente();
-	
-	public Conta(String nomeTitular) {
-		this.agencia = setAgencia();
-		this.conta = setConta();
-		this.titular.nome = nomeTitular;
-	}
 	
 	//Getters
 	public int getAgencia() {
@@ -45,14 +39,12 @@ public class Conta {
 	
 	//Actions
 	
-	public void deposita(double valor , Conta destino) {
+	public boolean deposita(double valor , Conta destino) {
 		if(valor > 0) {
 			destino.saldo += valor;
-			System.out.println("Deposito efetuado");
-			return;
+			return true;
 		} else {
-			System.out.println("Insira um valor positivo");
-			return;
+			return false;
 		}
 	}
 	

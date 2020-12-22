@@ -5,7 +5,6 @@ public class testaBytebankv2 {
 		
 		Conta conta = new Conta("Carlos Lima");
 		
-		System.out.println(conta.getTitular().nome);
 		System.out.println(conta.getAgencia()+ "/" + conta.getConta());
 		
 		conta.deposita(200, conta);

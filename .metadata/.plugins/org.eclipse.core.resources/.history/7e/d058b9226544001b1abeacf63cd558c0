@@ -3,9 +3,8 @@ public class testaBytebankv2 {
 
 	public static void main(String[] args) {
 		
-		Conta conta = new Conta("Carlos Lima");
+		Conta conta = new Conta();
 		
-		System.out.println(conta.getTitular().nome);
 		System.out.println(conta.getAgencia()+ "/" + conta.getConta());
 		
 		conta.deposita(200, conta);
