@@ -1,0 +1,61 @@
+import java.util.Random;
+
+public class Conta {
+	
+	private int agencia;	
+	private int conta;
+	private double saldo;
+	private String titular;
+	
+	//Getters
+	public int getAgencia() {
+		return this.agencia;
+	}
+	
+	public int getConta() {
+		return this.conta;
+	}
+	
+	public double getSaldo() {
+		return this.saldo;
+	}
+	
+	public String getTitular() {
+		return this.titular;
+	}
+	
+	//Setters
+	
+	public void setAgencia() {
+		Random rd = new Random();
+	    this.conta = rd.nextInt(100);
+	}
+	
+	public void setConta() {
+		Random rd = new Random();
+	    this.conta = rd.nextInt(10000);
+	}
+	
+	
+	//Actions
+	
+	public double deposita(double valor , Conta destino) {
+		destino.saldo += valor;
+	}
+	
+	public boolean saca(double valor) {
+		if(this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public double transfere(double valor, Conta destino) {
+		this.saca(valor);
+		destino.deposita(valor);
+	}
+	
+
+}

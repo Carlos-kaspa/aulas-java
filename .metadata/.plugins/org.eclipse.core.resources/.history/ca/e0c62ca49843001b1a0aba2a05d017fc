@@ -1,0 +1,29 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+		double salario = 2801.00;
+		
+		if(salario < 2800) {
+			
+			System.out.println("você é isento");
+			
+		 } else if(salario >= 2800) {
+			
+			System.out.println(" a alíquota do seu IR é 7,5%, logo você terá o desconto de: " + salario*0.075);
+			
+		 } else if ( salario >= 2801 || salario <= 3751 ) {
+		
+			System.out.println("alíquota de 15%, logo pagará " + salario*0.15);
+		 
+		 } else {
+			 
+			System.out.println("alíquota de 22%, pagará " + salario*0.22);
+		 
+		 }
+				
+		
+	}
+
+}

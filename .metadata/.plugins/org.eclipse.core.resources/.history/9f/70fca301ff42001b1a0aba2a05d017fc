@@ -1,0 +1,26 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+	int inicio = 10;
+	
+	int anterior = 0;
+	
+		for(int c = 1 ; c < inicio ; c++ ) {
+			
+			int atual = anterior;
+			
+			anterior = anterior + 1;
+		
+			int fibonacci = anterior + atual;
+			
+			System.out.println(fibonacci);
+			
+			anterior = fibonacci;
+			
+		}
+		
+	}
+
+}

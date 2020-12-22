@@ -1,0 +1,70 @@
+package bytebank;
+
+public class Conta {
+	
+	double saldo;
+	int agencia;
+	int numero;
+	Cliente titular;
+	
+	public boolean saca(double valor) {
+		
+		if(this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
+		} else {	
+			return false;
+		}
+		
+	}
+	
+	public void deposita(double valor) {
+		
+		this.saldo += valor;
+		
+	} 
+	
+	public boolean transfere(double valor , Conta conta) {
+		
+		if(this.saldo >= valor) {
+			this.saca(valor);
+			conta.deposita(valor);
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
+	
+	public String consultaSaldo(Conta conta) {
+		
+		String resposta = null;
+		
+		switch(conta.titular.sexo) {
+		
+		case 'H':
+			resposta += conta.titular.nome + ", já que o Sr se identifica sexualmente como um helicóptero apache de ataque, possui o saldo de: " + conta.saldo;
+			return resposta;
+			break;
+			
+		case 'M':
+			resposta += "Sr. " + conta.titular.nome + ", seu saldo é de: " + conta.saldo;
+			return resposta;
+			break;
+			
+		case 'F':
+			resposta += "Srª " + conta.titular.nome + ", seu novo saldo é de: " + conta.saldo;
+			return resposta;
+			break;
+		case 'G':
+			resposta += "Só porque a Srª é uma baita gostosa, seu saldo é de: " + conta.saldo;
+			return resposta;
+			break;
+		default:
+			resposta += "Seu saldo é de: " + conta.saldo;
+			return resposta;
+			break;
+		}	
+		
+	}
+}

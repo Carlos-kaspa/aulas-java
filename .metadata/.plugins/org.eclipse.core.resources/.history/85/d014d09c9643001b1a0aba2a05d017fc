@@ -1,0 +1,18 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+		int idade = 25;
+		boolean casado = false;
+		
+		if(idade >= 25 && casado) {
+			System.out.println("sua vida já passou e você se fodeu porque casou");
+		}else {
+			System.out.println("ainda há tempo, você só tem " + idade + "anos, ainda é jovem e pode aproveitar");
+		}
+	
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+
+public class SwitchCase {
+	
+	public static void main(String[] args) {
+
+		int mes = 12;
+	
+	
+		switch (mes) {
+		
+		case 1:
+			System.out.println("Você escolheu o mes Janeiro");
+			break;
+		case 2:
+			System.out.println(" Você escolheu fevereiro");
+			break;
+		case 3:
+			System.out.println(" você escolheu março");
+			break;
+		case 4:
+			System.out.println(" você escolheu abril");
+			break;
+		default:
+			System.out.println("esse mes eu nao coloquei entao escolhe outro");
+			break;
+			
+		}
+			
+	}
+	
+}

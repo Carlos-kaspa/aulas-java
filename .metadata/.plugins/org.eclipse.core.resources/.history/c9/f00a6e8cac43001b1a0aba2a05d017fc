@@ -1,0 +1,31 @@
+package bytebank;
+
+public class ExercicioMinhaConta {
+
+	public static void main(String[] args) {
+		
+		Conta minhaConta = new Conta();
+		
+		minhaConta.titular = "Carlos Lima";
+		minhaConta.saldo = 1243;
+		minhaConta.agencia = 12;
+		minhaConta.numero = 12345;
+		
+		System.out.println("Olá, Sr. " + minhaConta.titular);
+		System.out.println("O saldo da sua conta " + minhaConta.numero + "-" + minhaConta.agencia);
+		System.out.println("é de " + minhaConta.saldo);
+		
+		System.out.println("----------------------------");
+		
+		Conta contaMonique = new Conta();
+		
+		contaMonique.titular = "Monique Guimarães";
+		contaMonique.saldo = 10423;
+		contaMonique.agencia = 54321;
+		contaMonique.numero = 21;
+		
+		System.out.println("Olá, Srª " + contaMonique.titular);
+		System.out.println("O saldo da sua conta " + contaMonique.numero + "-" + contaMonique.agencia);
+		System.out.println("é de " + contaMonique.saldo);
+	}
+}

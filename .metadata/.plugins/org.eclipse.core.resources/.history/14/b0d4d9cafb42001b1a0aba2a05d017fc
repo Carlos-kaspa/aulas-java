@@ -1,0 +1,16 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+		int valor;
+		
+		for(int c = 0; c < 10; c++) {
+			
+			valor[c] = c;
+			System.out.println("o valor do valor[c] é" + valor[c]);
+		}
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+	int inicio = 10;
+	
+		for(int c = 1 ; c < inicio ; c++ ) {
+			
+			int fibonacci = c + (c+1);
+			
+			System.out.println(fibonacci);
+		}
+		
+	}
+
+}

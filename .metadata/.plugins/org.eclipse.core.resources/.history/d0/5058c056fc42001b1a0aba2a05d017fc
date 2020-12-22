@@ -1,0 +1,15 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+		float distancia = 2.30;
+		float tempo = 0.10;
+		
+		System.out.println("a força é o equivalente à " + distancia/tempo );
+		
+		
+		
+	}
+
+}

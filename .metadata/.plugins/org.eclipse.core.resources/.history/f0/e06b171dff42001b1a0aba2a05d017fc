@@ -1,0 +1,25 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+	int inicio = 10;
+	
+	int anterior = 0;
+	
+		for(int contador = 0 ; contador <= inicio ; c++ ) {
+			
+			if(contador = 0) {
+				
+				int a = contador;
+				int b = 1;
+				int c = a+b;
+				
+				System.out.println(c);
+			}
+					
+		}
+		
+	}
+
+}

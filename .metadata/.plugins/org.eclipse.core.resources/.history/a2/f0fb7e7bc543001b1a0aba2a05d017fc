@@ -1,0 +1,13 @@
+package bytebank;
+
+public class Cliente {
+	
+	String nome;
+	String profissao;
+	String endereco;
+	String estadoCivil;
+	int telefone;
+	int nascimento;
+	
+
+}

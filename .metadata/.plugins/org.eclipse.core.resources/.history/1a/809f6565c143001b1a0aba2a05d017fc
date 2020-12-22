@@ -1,0 +1,39 @@
+package bytebank;
+
+public class Conta {
+	
+	double saldo;
+	int agencia;
+	int numero;
+	String titular;
+	
+	public boolean saca(double valor) {
+		
+		if(this.saldo >= valor) {
+			this.saldo -= valor;
+		}
+	}
+	
+	public boolean deposita(double valor) {
+		
+		this.saldo += valor;
+	}
+	
+	public boolean transfere(double valor , Conta conta) {
+		
+		if(this.saldo >= valor) {
+			this.saca(valor);
+			conta.deposita(valor);
+			
+			return true;
+		} else {
+			
+			return false;
+		}
+	}
+	
+	public double consultaSaldo() {
+		
+		return this.saldo;
+	}
+}

@@ -1,0 +1,13 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+		int valor;
+		
+		valor = 37;
+		
+		System.out.println("o valor do seu budegas é " + valor);
+	}
+
+}

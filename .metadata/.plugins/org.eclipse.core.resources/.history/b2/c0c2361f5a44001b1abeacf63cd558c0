@@ -1,0 +1,11 @@
+import java.util.Random;
+
+
+public class Utils {
+
+	   public static void main(String[] args) {
+	      Random rd = new Random(); // creating Random object
+	      System.out.println(rd.nextInt(100));
+	   }
+	
+}

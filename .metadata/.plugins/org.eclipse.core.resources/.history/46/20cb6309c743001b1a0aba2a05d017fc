@@ -1,0 +1,43 @@
+package bytebank;
+
+public class ExercicioMinhaConta {
+
+	public static void main(String[] args) {
+		
+		Cliente cliente1 = new Cliente();
+		
+		cliente1.nome = "Carlos Augusto Gomes de Lima";
+		cliente1.sexo = 'H';
+		cliente1.profissao = "Desenvolvedor";
+		cliente1.endereco = "Dr. Guedes Coelho, 78 AP 81";
+		cliente1.estadoCivil = "Namorando a ruivinha";
+				
+		Conta conta1 = new Conta();
+		
+		conta1.titular = cliente1;
+		conta1.agencia = 12;
+		conta1.numero = 12345;
+		
+		conta1.deposita(1000);
+		
+		switch(conta1.titular.sexo) {
+		
+			case 'H':
+				System.out.println(conta1.titular.nome + ", já que o Sr se identifica sexualmente como um helicóptero apache de ataque, possui o saldo de: " + conta1.saldo);
+				break;
+				
+			case 'M':
+				System.out.println("Sr. " + conta1.titular.nome + ", seu saldo é de: " + conta1.saldo);
+				break;
+				
+			case 'F':
+				System.out.println("Srª " + conta1.titular.nome + ", seu novo saldo é de: " + conta1.saldo);
+				
+			default:
+				System.out.println("Seu saldo é de: " + conta1.saldo);
+		}	
+		
+		System.out.println("----------------------------");
+	}
+}
+		

@@ -1,0 +1,34 @@
+
+public class Conta {
+	
+	private int agencia = Conta.setAgencia();
+	private int conta ;
+	private double saldo;
+	private String titular;
+	
+	//Getters
+	public int getAgencia() {
+		return this.agencia;
+	}
+	
+	public int getConta() {
+		return this.conta;
+	}
+	
+	public double getSaldo() {
+		return this.saldo;
+	}
+	
+	public String getTitular() {
+		return this.titular;
+	}
+	
+	//Setters
+	
+	public int setAgencia() {
+		return this.agencia = random.nextInt(100);
+	}
+	
+	
+
+}
