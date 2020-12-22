@@ -16,10 +16,6 @@ public class testaBytebankv2 {
 		conta2.saca(100);
 		System.out.println(conta2.getSaldo());
 		
-		conta.transfere(100, conta2);
-		
-		System.out.println(conta2.getSaldo());
-		
 			
 	}
 }

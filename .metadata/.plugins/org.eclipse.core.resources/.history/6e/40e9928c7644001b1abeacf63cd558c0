@@ -5,21 +5,12 @@ public class testaBytebankv2 {
 		
 		Conta conta = new Conta("Carlos Lima");
 		
-		System.out.print(conta.getTitular().nome + " -> ");
+		System.out.println(conta.getTitular().nome);
 		System.out.println(conta.getAgencia() + "/" + conta.getConta() + "-" + conta.getDac());
 		
 		conta.deposita(200, conta);
 		
-		
-		
-		Conta conta2 = new Conta("Monique Guimarães");
-		conta2.saca(100);
-		System.out.println(conta2.getSaldo());
-		
-		conta.transfere(100, conta2);
-		
-		System.out.println(conta2.getSaldo());
-		
+		System.out.println(conta.getSaldo());		
 			
 	}
 }

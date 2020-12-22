@@ -4,14 +4,12 @@ public class Conta {
 	
 	private int agencia;
 	private int conta;
-	private int dac;
 	private double saldo;
 	private Cliente titular = new Cliente();
 	
 	public Conta(String nomeTitular) {
 		this.agencia = setAgencia();
 		this.conta = setConta();
-		this.dac = setDac();
 		this.titular.nome = nomeTitular;
 	}
 	
@@ -22,10 +20,6 @@ public class Conta {
 	
 	public int getConta() {
 		return this.conta;
-	}
-	
-	public int getDac() {
-		return this.dac;
 	}
 	
 	public double getSaldo() {
@@ -40,17 +34,12 @@ public class Conta {
 	
 	private int setAgencia() {
 		Random rd = new Random();
-	   return this.agencia = rd.nextInt(1000);
+	   return this.conta = rd.nextInt(100);
 	}
 	
 	private int setConta() {
 		Random rd = new Random();
 	    return this.conta = rd.nextInt(10000);
-	}
-	
-	private int setDac() {
-		Random rd = new Random();
-	    return this.dac = rd.nextInt(100);
 	}
 	
 	

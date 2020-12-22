@@ -40,7 +40,7 @@ public class Conta {
 	
 	private int setAgencia() {
 		Random rd = new Random();
-	   return this.agencia = rd.nextInt(1000);
+	   return this.conta = rd.nextInt(1000);
 	}
 	
 	private int setConta() {
@@ -50,7 +50,7 @@ public class Conta {
 	
 	private int setDac() {
 		Random rd = new Random();
-	    return this.dac = rd.nextInt(100);
+	    return this.conta = rd.nextInt(100);
 	}
 	
 	
