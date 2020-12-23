@@ -30,6 +30,7 @@ public class TestaHeranca {
 		System.out.println(gerente.getNome());
 		System.out.println(gerente.getFuncional());
 		System.out.println(gerente.gerAuth("09876"));
+		System.out.println(gerente.getBonificacao());
 		
 		
 		

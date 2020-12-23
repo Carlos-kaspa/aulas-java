@@ -16,4 +16,8 @@ public class Gerente extends Funcionario {
 		this.senhaGerente = senha;
 		System.out.println("Senha atualizada");
 	}
+	
+	public double getBonificacao() {
+		return super.salario; //super. sendo a referencia à classe mãe (funcionario)
+	}
 }

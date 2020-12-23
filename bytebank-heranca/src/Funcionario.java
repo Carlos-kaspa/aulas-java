@@ -5,7 +5,7 @@ public class Funcionario {
 	private int funcional;
 	private String nome;
 	private String cpf;
-	private double salario;
+	protected double salario; //visibilidade protected permite que possa ser acessado por classes abaixo da hierarquia de funcionario
 	
 	
 	
