@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Funcionario {
+public abstract class Funcionario {
 	
 	private int funcional;
 	private String nome;
