@@ -2,7 +2,7 @@ import java.util.Random;
 
 public abstract class Conta {
 	
-	private double saldo;
+	protected double saldo;
 	public int ag;
 	public int conta;
 	public String titular;
@@ -46,7 +46,11 @@ public abstract class Conta {
 			
 	public void saca(double valor) {
 		if(this.getSaldo() >= valor) {
-			this.saldo -= valor;
+			if(this.getClass() == ContaCorrente.class) {
+				this.saldo -= valor = 0.90;
+			} else {
+				this.saldo -= valor;
+			}
 		} else {
 			System.out.println("Saldo Insuficiente");
 		}
@@ -54,7 +58,7 @@ public abstract class Conta {
 	
 	public void transfere(double valor,Conta destino) {
 		if(this.getSaldo() >= valor) {
-			this.saca(valor);
+			this.saldo -= valor;
 			destino.deposita(valor);
 		}
 	}

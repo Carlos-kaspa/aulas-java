@@ -5,14 +5,5 @@ public class ContaCorrente extends Conta {
 		super(titular);
 	}
 	
-	@Override
-	public void saca(double valor) {
-		double taxa = 0.90;
-		double valorFinal = valor + taxa;
-		this.saca(valorFinal);
-	}
-	
-
-	
 }
 
