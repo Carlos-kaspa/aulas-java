@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Conta {
+public abstract class Conta {
 	
 	private int agencia;
 	private int conta;
